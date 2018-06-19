@@ -19,6 +19,7 @@
         <activity android:name=".chapter_4.Main4Activity" />
         <activity android:name=".chapter_4.CircleViewActivity" />
         <activity android:name=".chapter_4.HorizontalScrollViewExActivity"></activity>
+        <activity android:name=".chapter_4.ExListViewTestActivity"></activity>
     </application>
 
 </manifest>

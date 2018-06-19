@@ -22,4 +22,8 @@ public class Main4Activity extends BaseActivity {
     public void goHSEx(View view) {
         jump(HorizontalScrollViewExActivity.class);
     }
+
+    public void goExListView(View view) {
+        jump(ExListViewTestActivity.class);
+    }
 }
