@@ -33,5 +33,12 @@
             android:text="ExpandableListView回顾"
             android:onClick="goExListView"
             />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="StickLayout"
+            android:onClick="goStickLayout"
+            />
     </LinearLayout>
 </ScrollView>

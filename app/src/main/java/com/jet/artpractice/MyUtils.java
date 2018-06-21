@@ -3,6 +3,7 @@ package com.jet.artpractice;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.util.DisplayMetrics;
+import android.util.TypedValue;
 import android.view.WindowManager;
 
 import java.io.Closeable;
@@ -50,5 +51,10 @@ public class MyUtils {
 
     public static void executeInThread(Runnable runnable) {
         new Thread(runnable).start();
+    }
+
+    public static int dp2px(Context context, int dp) {
+        return Math.round(TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_DIP, dp, context.getResources().getDisplayMetrics()));
     }
 }

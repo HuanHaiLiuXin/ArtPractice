@@ -150,6 +150,11 @@ public class HorizontalScrollViewEx extends ViewGroup {
     }
 
     @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return super.dispatchTouchEvent(ev);
+    }
+
+    @Override
     public boolean onTouchEvent(MotionEvent event) {
         //注意:velocityTracker.addMovement(event);要在这儿添加事件;
         //如果在MotionEvent.ACTION_UP时候才执行addMovement,会导致 监听时间过短(远小于1000ms),使获取到的速度远低于准确值

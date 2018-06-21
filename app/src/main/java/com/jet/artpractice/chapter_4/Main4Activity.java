@@ -26,4 +26,8 @@ public class Main4Activity extends BaseActivity {
     public void goExListView(View view) {
         jump(ExListViewTestActivity.class);
     }
+
+    public void goStickLayout(View view) {
+        jump(StickLayoutActivity.class);
+    }
 }

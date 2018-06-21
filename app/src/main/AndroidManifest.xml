@@ -3,6 +3,7 @@
     package="com.jet.artpractice">
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,10 +17,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CustomErrorActivity"
+            android:label="@string/error_title"
+            android:process=":error_activity">
+            <!-- You can also use this instead of using CustomActivityOnCrash.setErrorActivityClass(CustomErrorActivity.class); -->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="cat.ereza.customactivityoncrash.ERROR" /> -->
+            <!-- </intent-filter> -->
+        </activity>
         <activity android:name=".chapter_4.Main4Activity" />
         <activity android:name=".chapter_4.CircleViewActivity" />
-        <activity android:name=".chapter_4.HorizontalScrollViewExActivity"></activity>
-        <activity android:name=".chapter_4.ExListViewTestActivity"></activity>
+        <activity android:name=".chapter_4.HorizontalScrollViewExActivity" />
+        <activity android:name=".chapter_4.ExListViewTestActivity" />
+        <activity android:name=".chapter_4.StickLayoutActivity"></activity>
     </application>
 
 </manifest>
