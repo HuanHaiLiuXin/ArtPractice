@@ -30,4 +30,8 @@ public class Main4Activity extends BaseActivity {
     public void goStickLayout(View view) {
         jump(StickLayoutActivity.class);
     }
+
+    public void goInvalidateRect(View view) {
+        jump(InvalidateRectViewActivity.class);
+    }
 }

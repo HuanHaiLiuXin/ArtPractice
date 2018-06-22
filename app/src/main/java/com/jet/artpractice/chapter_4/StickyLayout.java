@@ -1,11 +1,14 @@
 package com.jet.artpractice.chapter_4;
 
 import android.content.Context;
+import android.graphics.Canvas;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
+import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import java.util.NoSuchElementException;
@@ -162,6 +165,12 @@ public class StickyLayout extends LinearLayout {
         if (hasWindowFocus && (mHeader == null || mContent == null)) {
             initData();
         }
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+        Log.e("Jet","StickyLayout:onDraw");
     }
 
     @Override

@@ -21,6 +21,7 @@
             android:name=".CustomErrorActivity"
             android:label="@string/error_title"
             android:process=":error_activity">
+
             <!-- You can also use this instead of using CustomActivityOnCrash.setErrorActivityClass(CustomErrorActivity.class); -->
             <!-- <intent-filter> -->
             <!-- <action android:name="cat.ereza.customactivityoncrash.ERROR" /> -->
@@ -30,7 +31,8 @@
         <activity android:name=".chapter_4.CircleViewActivity" />
         <activity android:name=".chapter_4.HorizontalScrollViewExActivity" />
         <activity android:name=".chapter_4.ExListViewTestActivity" />
-        <activity android:name=".chapter_4.StickLayoutActivity"></activity>
+        <activity android:name=".chapter_4.StickLayoutActivity" />
+        <activity android:name=".chapter_4.InvalidateRectViewActivity" android:hardwareAccelerated="true"/>
     </application>
 
 </manifest>

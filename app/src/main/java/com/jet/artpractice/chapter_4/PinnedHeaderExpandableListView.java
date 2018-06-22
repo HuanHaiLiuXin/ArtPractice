@@ -4,8 +4,10 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.ExpandableListView;
@@ -25,6 +27,7 @@ public class PinnedHeaderExpandableListView extends ExpandableListView implement
     private OnHeaderUpdateListener mHeaderUpdateListener;   //
     private boolean mActionDownHappened = false;            //头部是否被点击
     private boolean mIsHeaderGroupClickable = true;         //头部是否可点击
+    private int mTouchSlop;
 
     public PinnedHeaderExpandableListView(Context context) {
         super(context);
@@ -42,6 +45,7 @@ public class PinnedHeaderExpandableListView extends ExpandableListView implement
     private void initView() {
         setFadingEdgeLength(0);
         setOnScrollListener(this);
+        mTouchSlop = ViewConfiguration.get(getContext()).getScaledTouchSlop();
     }
 
     @Override
@@ -93,6 +97,12 @@ public class PinnedHeaderExpandableListView extends ExpandableListView implement
         }
         int delta = mHeaderView.getTop();
         mHeaderView.layout(0, delta, mHeaderWidth, delta + mHeaderHeight);
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+        Log.e("Jet","PinnedHeaderExpandableListView:onDraw");
     }
 
     @Override
