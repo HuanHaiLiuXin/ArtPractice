@@ -47,5 +47,12 @@
             android:text="局部刷新"
             android:onClick="goInvalidateRect"
             />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="ViewOutlineProvider试验"
+            android:onClick="goViewOutlineProvider"
+            />
     </LinearLayout>
 </ScrollView>

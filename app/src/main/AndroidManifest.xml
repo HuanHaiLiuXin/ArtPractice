@@ -32,7 +32,10 @@
         <activity android:name=".chapter_4.HorizontalScrollViewExActivity" />
         <activity android:name=".chapter_4.ExListViewTestActivity" />
         <activity android:name=".chapter_4.StickLayoutActivity" />
-        <activity android:name=".chapter_4.InvalidateRectViewActivity" android:hardwareAccelerated="true"/>
+        <activity
+            android:name=".chapter_4.InvalidateRectViewActivity"
+            android:hardwareAccelerated="true" />
+        <activity android:name=".chapter_4.ViewOutlineProviderActivity"></activity>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package com.jet.artpractice.chapter_4;
 
+import android.graphics.Outline;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,7 @@ public class Main4Activity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
+        Outline outline = null;
     }
 
     public void goCircleView(View view) {
@@ -33,5 +35,9 @@ public class Main4Activity extends BaseActivity {
 
     public void goInvalidateRect(View view) {
         jump(InvalidateRectViewActivity.class);
+    }
+
+    public void goViewOutlineProvider(View view) {
+        jump(ViewOutlineProviderActivity.class);
     }
 }
