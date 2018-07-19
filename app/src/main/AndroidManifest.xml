@@ -35,7 +35,8 @@
         <activity
             android:name=".chapter_4.InvalidateRectViewActivity"
             android:hardwareAccelerated="true" />
-        <activity android:name=".chapter_4.ViewOutlineProviderActivity"></activity>
+        <activity android:name=".chapter_4.ViewOutlineProviderActivity" />
+        <activity android:name=".chapter_7.Chap7Activity"></activity>
     </application>
 
 </manifest>
